@@ -2,7 +2,7 @@ let main = document.querySelector('#main');
 let resultInput = document.querySelector('#result');
 
 let data;
-let url = '/data.json';
+let url = 'data.json';
 
 fetch(url)
     .then(response => response.json())
