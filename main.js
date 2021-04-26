@@ -4,6 +4,7 @@ let resultInput = document.querySelector('#result');
 
 let data;
 let url = 'data.json';
+let lang = navigator.language;
 
 fetch(url)
     .then(response => response.json())
@@ -19,8 +20,17 @@ function generateContent() {
     main.innerHTML = '';
     nav.innerHTML = '';
     for (let i of data) {
-        main.innerHTML += '<h3 id="group-' + i.title.replace(/\s+/g, '-') + '">' + i.title + '</h3>';
-        nav.innerHTML += '<a href="#group-' + i.title.replace(/\s+/g, '-') + '">' + i.title + '</a>';
+
+        function returnLang() {
+            switch(lang) {
+                case 'ru-RU':
+                    return i.title_ru_RU || i.title
+                default:
+                    return i.title
+            }
+        }
+        main.innerHTML += '<h3 id="group-' + i.title.replace(/\s+/g, '-') + '">' + returnLang() + '</h3>';
+        nav.innerHTML += '<a href="#group-' + i.title.replace(/\s+/g, '-') + '">' + returnLang() + '</a>';
 
         let generatedList = '';
 
