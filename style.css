@@ -32,6 +32,8 @@ main {
 
     cursor: pointer;
     transition-duration: .1s;
+
+    background-color: white;
 }
 
 .symbol-box:hover {

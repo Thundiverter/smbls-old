@@ -21,7 +21,8 @@ function generateContent() {
     nav.innerHTML = '';
     for (let i of data) {
 
-        function returnLang() {
+        // returnLangTitle()
+        function returnLangTitle() {
             switch(lang) {
                 case 'ru-RU':
                     return i.title_ru_RU || i.title
@@ -29,14 +30,16 @@ function generateContent() {
                     return i.title
             }
         }
-        main.innerHTML += '<h3 id="group-' + i.title.replace(/\s+/g, '-') + '">' + returnLang() + '</h3>';
-        nav.innerHTML += '<a href="#group-' + i.title.replace(/\s+/g, '-') + '">' + returnLang() + '</a>';
+        // header
+        main.innerHTML += '<h3 id="group-' + i.title.replace(/\s+/g, '-') + '">' + returnLangTitle() + '</h3>';
+        nav.innerHTML += '<a href="#group-' + i.title.replace(/\s+/g, '-') + '">' + returnLangTitle() + '</a>';
 
+        // symbols
         let generatedList = '';
 
         for (let j of i.list) {
             if (typeof j == 'string') {
-                generatedList += '<a class="symbol-box">' + j + '</a>';
+                generatedList += '<button class="symbol-box">' + j + '</button>';
             }
             else {
                 generatedList += '<a class="symbol-box" data-tags"' + j[1] + '">' + j[0] + '</a>';
