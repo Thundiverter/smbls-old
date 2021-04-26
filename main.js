@@ -1,4 +1,5 @@
 let main = document.querySelector('#main');
+let nav = document.querySelector('nav');
 let resultInput = document.querySelector('#result');
 
 let data;
@@ -16,8 +17,10 @@ fetch(url)
 // generates all the sections
 function generateContent() {
     main.innerHTML = '';
+    nav.innerHTML = '';
     for (let i of data) {
-        main.innerHTML += '<h3>' + i.title + '</h3>';
+        main.innerHTML += '<h3 id="group-' + i.title.replace(/\s+/g, '-') + '">' + i.title + '</h3>';
+        nav.innerHTML += '<a href="#group-' + i.title.replace(/\s+/g, '-') + '">' + i.title + '</a>';
 
         let generatedList = '';
 
