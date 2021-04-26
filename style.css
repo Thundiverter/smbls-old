@@ -37,15 +37,23 @@ main {
     background-color: white;
 }
 
-.symbol-box:hover {
+.symbol-box:hover,
+header nav a:hover {
     background-color: rgb(250, 249, 249);
     border-color: rgb(194, 194, 194);
 }
 
-.symbol-box:active {
+.symbol-box:active,
+header nav a:active {
     background-color: rgb(241, 241, 241);
     border-color: rgb(179, 178, 178);
     transform: translateY(1px);
+}
+
+.symbol-box:focus-visible,
+header nav a:focus-visible  {
+    outline: none;
+    border-color: #929292;
 }
 
 h3 {
@@ -116,17 +124,6 @@ header nav a {
 
     cursor: pointer;
     transition-duration: .1s;
-}
-
-header nav a:hover {
-    background-color: rgb(250, 249, 249);
-    border-color: rgb(194, 194, 194);
-}
-
-header nav a:active {
-    background-color: rgb(241, 241, 241);
-    border-color: rgb(179, 178, 178);
-    transform: translateY(1px);
 }
 
 @media (min-width: 740px) {
