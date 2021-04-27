@@ -39,10 +39,10 @@ function generateContent() {
 
         for (let j of i.list) {
             if (typeof j == 'string') {
-                generatedList += '<button class="symbol-box">' + j + '</button>';
+                generatedList += '<button class="symbol-box" data-tags="' + j + ' ">' + j + '</button>';
             }
-            else {
-                generatedList += '<a class="symbol-box" data-tags"' + j[1] + '">' + j[0] + '</a>';
+            if (typeof j == 'object') {
+                generatedList += '<a class="symbol-box" data-tags="' + j[0] + ' ' + j[1] + ' ">' + j[0] + '</a>';
             }
         }
 
@@ -51,7 +51,21 @@ function generateContent() {
 
     for (let k of document.querySelectorAll('.symbol-box')) {
         k.addEventListener('click', () => {
-            resultInput.value = resultInput.value + k.innerText
+            resultInput.value = resultInput.value + k.innerText;
         })
     }
 }
+
+/* SEARCH */
+let searchInput = document.querySelector('#search');
+searchInput.addEventListener('input', () => {
+    
+    for (let m of document.querySelectorAll('.symbol-box')) {
+        if (m.dataset.tags.toLowerCase().search(searchInput.value.toLowerCase()) != -1) {
+            m.style.display = '';
+        }
+        else {
+            m.style.display = 'none';
+        }
+    }
+})
