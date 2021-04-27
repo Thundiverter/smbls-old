@@ -18,7 +18,7 @@ main {
 
 .flex {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 72px);
+    grid-template-columns: repeat(auto-fit, 60px);
     gap: 8px;
 }
 
