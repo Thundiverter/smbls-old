@@ -3,19 +3,28 @@
         "title": "Mathematics",
         "title_ru_RU": "Математика",
         "list": [
-            ["+", "plus add"], ["−", "minus substract"], ["×", "multiply times"],
-            ["·", "multiply times"], ["÷", "divide"], ["∶", "divide"], ["∕", "divide"],
-            ["=", "equal is"], ["≈", "approx equal approximately"], ["≠", "neq not equal"],
-            ["∝", "propto proportional"], ["〈", "bracket arrow"], ["〉", "bracket arrow"],
-            ["̅", "line"], ["≡", "equipv equivalent"], ["<", "bracket arrow"], [">", "bracket arrow"],
-            ["⩽", "leq less or equal"], ["⩾", "geq greater or equal"], ["≤", "leq less or equal"],
-            ["≥", "geq greater or equal"], ["≪", "much less"], ["≫", "much more"],
-            ["~", "about approx approximately"], ["±", "pm mp plus minus plus"], ["∓", "pm mp plus minus plus"],
-            ["√", "square root sqrt"], ["∛", "cubic root sqrt"],
-            ["∜", "root sqrt"], ["!", "factorial"], ["∫", "inegral"], ["^", "power"],
-            ["∞", "infinity"], ["°", "degree"], ["≅", "cong"],
+            ["+", "plus add плюс сложение"], ["−", "minus substract минус вычитание"],
+            ["×", "multiply times умножение"], ["·", "multiply times умножение игддуе"],
+            ["÷", "divide деление"], ["∶", "divide деление"],
+            ["∕", "divide деление"], ["=", "equal is равно"],
+            ["≈", "equal approximately равно примерно приблизительно"],
+            ["≠", "neq not equal не равно"],
+            ["∝", "propto proportional пропорционально"],
+            ["〈", "bracket arrow скобка кавычка стрелка"],
+            ["〉", "bracket arrow скобка кавычка стрелка"],
+            ["̅", "line линия"], ["≡", "equipv equivalent равно эквивалентно"],
+            ["<", "bracket arrow скобка стрелка less меньше"], [">", "bracket arrow more скобка стрелка больше"],
+            ["⩽", "leq less or equal меньше или равно"], ["⩾", "geq greater or equal больше или равно"],
+            ["≤", "leq less or equal меньше или равно"],
+            ["≥", "geq greater or equal больше или равно"], ["≪", "much less намного меньше"],
+            ["≫", "much more намного больше"],
+            ["~", "about approximately примерно приблизительно"],
+            ["±", "pm mp plus minus плюс минус"], ["∓", "pm mp plus minus плюс минус"],
+            ["√", "square root sqrt корень"], ["∛", "cubic root sqrt корень"],
+            ["∜", "root sqrt корень"], ["!", "factorial факториал"], ["∫", "inegral интеграл"], ["^", "power степень"],
+            ["∞", "infinity бесконечность"], ["°", "degree градус"], ["≅", "congurence approximately equal примерно приблизительно равно"],
 
-            "⊲", "⊕", "⊗", "∂", "∁", "∑", "∏", "‰", "ˆ", "∇", "Δ", ["—", "dash hyphen"]
+            "⊲", ["⊕","xor circle cross"], "⊗", ["∂","partial"], ["∁","дополнение"], ["∑","sum sigma"], "∏", ["‰","percent per cent promile процент промилле per"], ["ˆ", "circumflex циркумфлекс"], "∇", "Δ", ["—", "dash тире"]
         ]
     },
     
@@ -31,17 +40,18 @@
         "title": "Geometry",
         "title_ru_RU": "Геометрия",
         "list": [
-            ["⇒", "right arrow"], ["→", "right arrow"], "⊃",
-            ["⇔", "left right arrow"], ["∧", "logic and"], ["∨", "logic or"],
-            ["¬", "prefix not"], ["∀", "for all"], ["∃", "exist"], ["∄", "exist"],
-            ["∅", "no empty set"], ["∈", "is"], ["∉", "is not"],
-            "⊆", "⊂", "⊇", "⊃", "⊊", "⊋", "∪", "⋂", "→", "↦", "Ø", "∋",
-            "∙", "⋮", "⋯", "⋰", "⋱", "ℵ", "ℶ",
-            ["∟","angle"], ["∠","angle"], ["∡","angle"], ["∢","angle"], ["⊾","angle"], ["⊿","triangle"],
-            ["⋕","hashtag equal parallel"], ["⊥", "perpendicular"], "∤", ["∥","parallel"],
-            ["∦", "not parallel"], "∷", "∴", "∵",
+            ["⇒", "right arrow стрелка вправо"], ["→", "right arrow стрелка вправо"], "⊃",
+            ["⇔", "left right arrow стрелка влево вправо"], ["∧", "logic and логическое и"], ["∨", "logic or логическое или"],
+            ["¬", "prefix not приставка нет"], ["∀", "for all для всех"], ["∃", "exists существует"], ["∄", "exists существует"],
+            ["∅", "no empty set нет пустое множество"], ["∈", "is принадлежит"], ["∉", "is принадлежит"],
+            "⊆", "⊂", "⊇", "⊃", "⊊", "⊋", "∪", "⋂", ["→","arrow right"], ["↦","arrow right"],
+            "∋",
+            ["∙","bullet"], "⋮", "⋯", "⋰", "⋱", ["ℵ","aleph алеф"], ["ℶ","бет beth"],
+            ["∟","angle угол"], ["∠","angle угол"], ["∡","angle угол"], ["∢","angle угол"], ["⊾","angle угол"], ["⊿","triangle треугольник"],
+            ["⋕","hashtag equal parallel хэштег равны равен параллельный"], ["⊥", "perpendicular перпендикулярный"], "∤", ["∥","parallel параллельный"],
+            ["∦", "not parallel параллельный"], "∷", "∴", "∵",
             
-            ["∎","Q.E.D. QED"]
+            ["∎","Q.E.D. QED чтд ч.т.д."]
         ]
     },
 
@@ -64,13 +74,23 @@
         "title": "Greek alphabet",
         "title_ru_RU": "Греческий алфавит",
         "list": [
-            ["Α","alpha"], ["Β","beta"], ["Γ","gamma"], ["Δ","detla"], ["Ε","epsilon"],
-            "Ζ", "Η", "Θ", "Ι", "Κ", ["Λ","lambda"],
-            ["Μ","mu"], ["Ν","nu"], "Ξ", "Ο", ["Π","pi"], "Ρ", "Σ", "Τ", "Υ", ["Φ","phi"], "Χ",
-            "Ψ", "Ω",
-            ["α","alpha"], ["β","beta"], ["γ","gamma"], ["δ","delta"], ["ε","epsilon"],
-            "ζ", "η", "θ", "ι", "κ", ["λ","lambda"], ["μ","mu"], ["ν","nu"],
-            "ξ", "ο", ["π","pi"], ["ρ","rho"], "σ", "ς", ["τ","t"], "υ", ["φ","phi"], "χ", "ψ", "ω"
+            ["Α","alpha альфа"], ["Β","beta бета"], ["Γ","gamma гамма"], ["Δ","detla дельта"], ["Ε","epsilon эпсилон"],
+            ["Ζ","zeta дзета"], ["Η","eta эта"], ["Θ","theta тета"], ["Ι","iota йота"], ["Κ","kappa каппа"], ["Λ","lambda лямбда"],
+            ["Μ","mu мю"], ["Ν","nu ню"], ["Ξ","xi кси"], ["Ο","omicron омикрон"], ["Π","pi пи"], ["Ρ", "rho ро"], ["Σ","sigma сигма"],
+            ["Τ","tau тау"], ["Υ","upsilon ипсилон"], ["Φ","phi фи"], ["Χ","chi хи"], ["Ψ","psi пси"], ["Ω","omega омега"],
+            ["α","alpha альфа"], ["β","beta бета"], ["γ","gamma гамма"], ["δ","delta дельта"], ["ε","epsilon эпсилон"],
+            ["ζ","zeta дзета"], ["η","eta эта"], ["θ","theta тета"], ["ι","iota йота"], ["κ","kappa каппа"], ["λ","lambda лямбда"],
+            ["μ","mu мю"], ["ν","nu ню"], ["ξ","xi кси"], ["ο","omicron омикрон"], ["π","pi пи"], ["ρ","rho ро"],
+            ["σ","sigma сигма"], ["ς","sigma сигма"], ["τ","tau тау"], ["υ","upsilon ипсилон"], ["φ","phi фи"], ["χ","chi хи"],
+            ["ψ","psi пси"], ["ω","omega омега"]
+        ]
+    },
+
+    {
+        "title": "Physics",
+        "title_ru_RU": "Физика",
+        "list": [
+            ["ℏ","h hbar постоянная планка"]
         ]
     },
 
@@ -82,13 +102,23 @@
             ["⁶","6"], ["⁷","7"], ["⁸","8"], ["⁹","9"],
             ["₀","0"], ["₁","1"], ["₂","2"], ["₃","3"], ["₄","4"], ["₅","5"], ["₆","6"],
             ["₇","7"], ["₈","8"], ["₉","9"],
-            ["ⁱ","I"], ["⁺","+ plus add"], ["⁻", "- minus substract"],
-            ["⁼","= equal is"], ["⁽", "() bracket parenthesis"],
-            ["⁾","() bracket parenthesis"], ["ⁿ","n"], ["₊","+ add plus"],
-            ["₋", "- minus substract"], ["₌", "= equal is"], ["₍", "() bracket parenthesis"],
-            ["₎", "() bracket parenthesis"], ["ₐ","a"], ["ₑ","e"],
+            ["ⁱ","I"], ["⁺","plus add плюс сложение"], ["⁻", "minus substract минус вычитание"],
+            ["⁼","= equal is равно"], ["⁽", "() bracket parenthesis скобки"],
+            ["⁾","() bracket parenthesis скобки"], ["ⁿ","n"], ["₊","add plus плюс сложение"],
+            ["₋", "minus substract минус вычитание"], ["₌", "equal is равно"], ["₍", "() bracket parenthesis скобки"],
+            ["₎", "() bracket parenthesis скобки"], ["ₐ","a"], ["ₑ","e"],
             ["ₒ","o"], ["ₓ","x"], ["ₔ","e"], ["ₕ","h"], ["ₖ","k"], ["ₗ","l"],
             ["ₘ","m"], ["ₙ","n"], ["ₚ","p"], ["ₛ","s"], ["ₜ","t"]
+        ]
+    },
+
+    {
+        "title": "Negation",
+        "title_ru_RU": "Отрицание",
+        "list": [
+            "≠","≮","≯","≰","≱","≢","≁","≄","≉","≇","≭","≨","≩","⊀","⊁","⋠","⋡","∉",
+            "∌","⊄","⊅","⊈","⊉","⊊","⊋","⋢","⋣","⋦","⋧","⋨","⋩","⋪","⋫","⋬","⋭","∤",
+            "∦","⊬","⊭","⊮","⊯","∄"
         ]
     },
 
@@ -96,10 +126,10 @@
         "title": "Other",
         "title_ru_RU": "Другое",
         "list": [
-            ["§","paragraph"], ["©","copyright"], "®", ["¿","? question"], ["¡","! exclaimation"],
-            ["•","dot bullet"], ["℉","fahrenheit degree"], ["℃","calcius degree"],
-            ["←","arrow left"], ["↑", "arrow up"], ["→", "arrow right"], ["↓", "arrow down"],
-            ["↔", "arrow left right left"]
+            ["§","paragraph параграф"], ["©","copyright копирайт"], "®", ["¿","? question вопрос"], ["¡","! exclaimation восклицательный"],
+            ["•","dot bullet точка circle круг"], ["℉","fahrenheit degree фаренгейт градусы"], ["℃","calcius degree цельсий градусы"],
+            ["←","arrow left стрелка влево"], ["↑", "arrow up стрелка вверх"], ["→", "arrow right стрелка вправо"], ["↓", "arrow down стрелка вниз"],
+            ["↔", "arrow left right стрелка влево вправо"], ["Ⅎ","F"], ["ð","eth"], ["△","triangle треугольник"]
         ]
     }
 ]
