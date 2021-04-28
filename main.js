@@ -6,6 +6,7 @@ let data;
 let url = 'data.json';
 let lang = navigator.language;
 
+// получает json со всеми данными
 fetch(url)
     .then(response => response.json())
     .then(commit => {
@@ -51,7 +52,9 @@ function generateContent() {
 
     for (let k of document.querySelectorAll('.symbol-box')) {
         k.addEventListener('click', () => {
-            resultInput.value = resultInput.value + k.innerText;
+            // добавляет в input в футере
+            // resultInput.value = resultInput.value + k.innerText;
+            navigator.clipboard.writeText(k.innerText)
         })
     }
 }
@@ -59,13 +62,44 @@ function generateContent() {
 /* SEARCH */
 let searchInput = document.querySelector('#search');
 searchInput.addEventListener('input', () => {
-    
     for (let m of document.querySelectorAll('.symbol-box')) {
-        if (m.dataset.tags.toLowerCase().search(searchInput.value.toLowerCase()) != -1) {
-            m.style.display = '';
-        }
-        else {
-            m.style.display = 'none';
+        m.style.display = '';
+    }
+
+    for (let m of document.querySelectorAll('.symbol-box')) {
+        for (let p of searchInput.value.split(' ')) {
+            if (m.dataset.tags.toLowerCase().search(p.toLowerCase()) != -1) {
+                m.style.display = '';
+            }
+            else {
+                m.style.display = 'none';
+            }
         }
     }
 })
+
+// searchInput.addEventListener('input', () => {
+    
+//     for (let m of document.querySelectorAll('.symbol-box')) {
+//         if (m.dataset.tags.toLowerCase().search(searchInput.value.toLowerCase()) != -1) {
+//             m.style.display = '';
+//         }
+//         else {
+//             m.style.display = 'none';
+//         }
+//     }
+// })
+
+/* THEMES */
+/*let currentTheme;
+if (localStorage.getItem('theme')) {
+    currentTheme = localStorage.getItem('theme');
+}
+else {
+    localStorage.setItem('theme', 'light');
+}
+
+let themesButton = document.querySelector('#settings-switchTheme');
+themesButton.addEventListener('click', () => {
+
+})*/
