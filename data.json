@@ -24,7 +24,8 @@
             ["∜", "root sqrt корень"], ["!", "factorial факториал"], ["∫", "inegral интеграл"], ["^", "power степень"],
             ["∞", "infinity бесконечность"], ["°", "degree градус"], ["≅", "congurence approximately equal примерно приблизительно равно"],
 
-            "⊲", ["⊕","xor circle cross"], "⊗", ["∂","partial"], ["∁","дополнение"], ["∑","sum sigma"], "∏", ["‰","percent per cent promile процент промилле per"], ["ˆ", "circumflex циркумфлекс"], "∇", "Δ", ["—", "dash тире"]
+            "⊲", ["⊕","xor circle cross"], "⊗", ["∂","partial"], ["∁","дополнение"], ["∑","sum sigma"], "∏", ["‰","percent per cent promile процент промилле per"], ["ˆ", "circumflex циркумфлекс"], "∇", "Δ", ["—", "dash тире"],
+            ["⌈","lceil"], ["⌉","rceil"], ["⌊","lfloor"], ["⌋", "rfloor"]
         ]
     },
     
