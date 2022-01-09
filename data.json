@@ -130,7 +130,9 @@
             ["§","paragraph параграф"], ["©","copyright копирайт"], "®", ["¿","? question вопрос"], ["¡","! exclaimation восклицательный"],
             ["•","dot bullet точка circle круг"], ["℉","fahrenheit degree фаренгейт градусы"], ["℃","calcius degree цельсий градусы"],
             ["←","arrow left стрелка влево"], ["↑", "arrow up стрелка вверх"], ["→", "arrow right стрелка вправо"], ["↓", "arrow down стрелка вниз"],
-            ["↔", "arrow left right стрелка влево вправо"], ["Ⅎ","F"], ["ð","eth"], ["△","triangle треугольник"]
+            ["↔", "arrow left right стрелка влево вправо"], ["Ⅎ","F"], ["ð","eth"], ["△","triangle треугольник"],
+
+            ["⌫", "backspace clean erase стереть очистить"]
         ]
     }
 ]
