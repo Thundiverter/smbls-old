@@ -142,7 +142,7 @@
             ["←","arrow left стрелка влево"], ["↑", "arrow up стрелка вверх"], ["→", "arrow right стрелка вправо"], ["↓", "arrow down стрелка вниз"],
             ["↔", "arrow left right стрелка влево вправо"], ["Ⅎ","F"], ["ð","eth"], ["△","triangle треугольник"],
 
-            ["⌫", "backspace clean erase стереть очистить"]
+            ["⌫", "backspace clean erase стереть очистить"], ["↵", "enter ввод"], ["⌘", "command cmd"], ["❖"], ["✦"], ["✧"], ["⎈", "helm"]
         ]
     }
 ]
